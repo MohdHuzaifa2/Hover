@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Animation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="btn">
+      <span class="circle"></span>
+      <span class="btn-content">Start a project</span>
+    </button>
+  </div>
+
+  <script>
+    // JavaScript to handle the hover effect
+    const button = document.querySelector('.btn');
+    const circle = document.querySelector('.circle');
+
+    button.addEventListener('mouseenter', (e) => {
+      const x = e.offsetX;
+      const y = e.offsetY;
+      circle.style.left = `${x}px`;
+      circle.style.top = `${y}px`;
+    });
+
+    button.addEventListener('mousemove', (e) => {
+      const x = e.offsetX;
+      const y = e.offsetY;
+
+      // console.log(e);
+      e.target.style.setProperty('--circle-size', `${e.target.clientWidth*2}px`);
+      e.target.style.setProperty('--circle-size', `${e.target.clientWidth*2}px`);
+      circle.style.left = `${x}px`;
+      circle.style.top = `${y}px`;
+      button.classList.add('hover');
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.classList.remove('hover');
+    });
+  </script>
+</body>
+</html>
