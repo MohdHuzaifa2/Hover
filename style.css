@@ -32,7 +32,7 @@ body {
   padding: 18px 36px;
   cursor: pointer;
   position: relative;
-  transition: color 0.3s ease-out;
+  transition: color 0.5s ease-out;
   overflow: hidden;
 }
 
@@ -44,7 +44,7 @@ body {
   position: absolute;
   z-index: -1;
   will-change: transform, width, height, left, top ;
-  transition: all 0.3s linear( 0, 0.1538 4.09%, 0.2926 8.29%, 0.4173 12.63%, 0.5282 17.12%, 0.6255 21.77%, 0.7099 26.61%, 0.782 31.67%, 0.8425 37%, 0.8887 42.23%, 0.9257 47.79%, 0.9543 53.78%, 0.9752 60.32%, 0.9883 67.11%, 0.9961 75%, 1 );
+  transition: all 0.5s linear( 0, 0.1538 4.09%, 0.2926 8.29%, 0.4173 12.63%, 0.5282 17.12%, 0.6255 21.77%, 0.7099 26.61%, 0.782 31.67%, 0.8425 37%, 0.8887 42.23%, 0.9257 47.79%, 0.9543 53.78%, 0.9752 60.32%, 0.9883 67.11%, 0.9961 75%, 1 );
   transform:  translate(-50%, -50%);
 }
 
